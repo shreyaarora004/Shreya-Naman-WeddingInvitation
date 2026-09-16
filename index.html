@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Naman weds Shreya — शुभ विवाह · 14 December 2026</title>
+<meta name="description" content="With the blessings of Shri Ganesh, Naman & Shreya request the honour of your presence at their wedding amidst the wilds of Jim Corbett — Namaste Corbett Resort & Spa." />
+<meta name="theme-color" content="#3a0c1a" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Great+Vibes&family=Marcellus&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --wine:#4a1226;
+  --wine-dk:#360d1c;
+  --wine-deep:#280811;
+  --teal:#1b4a44;
+  --teal-dk:#123430;
+  --gold:#cba14c;
+  --gold-lt:#e7cd86;
+  --gold-soft:#f2e3b8;
+  --gold-deep:#a87d24;
+  --ivory:#f7efe0;
+  --ink:#2c0f16;
+  --rose:#c26b7e;
+  --marigold:#e8a02c;
+  --marigold-dp:#d47b18;
+  --leaf:#5f7a43;
+  --line:rgba(203,161,76,.42);
+
+  /* larger overall type scale (bumped per request) */
+  --fs-body:clamp(1.15rem,1.05rem + .4vw,1.35rem);
+  --fs-name:clamp(3rem,2.2rem + 4.5vw,5rem);
+  --fs-script:clamp(3.4rem,2.4rem + 5vw,5.8rem);
+  --fs-title:clamp(2.1rem,1.6rem + 2.4vw,3rem);
+  --fs-heading:clamp(1.6rem,1.35rem + 1vw,2.1rem);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Cormorant Garamond',serif;color:var(--ivory);background:var(--wine-deep);line-height:1.65;overflow-x:hidden;font-size:var(--fs-body)}
+h1,h2,h3{font-family:'Marcellus',serif;font-weight:400;letter-spacing:.5px;line-height:1.2}
+.hindi{font-family:'Tiro Devanagari Hindi',serif}
+.script{font-family:'Great Vibes',cursive;font-weight:400}
+
+/* ============ traditional border frame ============ */
+.page-frame{position:fixed;inset:0;pointer-events:none;z-index:60;
+  border:14px solid transparent;
+  border-image:repeating-linear-gradient(45deg,var(--gold) 0,var(--gold) 6px,var(--gold-deep) 6px,var(--gold-deep) 12px,transparent 12px,transparent 20px) 14;}
+.inner-frame{position:fixed;inset:20px;pointer-events:none;z-index:61;border:1px solid var(--line)}
+.corner{position:fixed;z-index:62;pointer-events:none;color:var(--gold);font-size:1.7rem}
+.corner.tl{top:24px;left:24px}.corner.tr{top:24px;right:24px}
+.corner.bl{bottom:24px;left:24px}.corner.br{bottom:24px;right:24px}
+
+/* ============ shared ============ */
+.divider{display:flex;align-items:center;justify-content:center;gap:14px;margin:18px auto}
+.divider::before,.divider::after{content:"";height:1px;width:72px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.divider span{color:var(--gold);font-size:1.15rem}
+.eyebrow{font-style:italic;font-size:calc(var(--fs-body) * 1.15);color:var(--gold-lt);text-align:center;margin-bottom:.4rem}
+.section-title{font-family:'Marcellus',serif;text-align:center;font-size:var(--fs-title);color:var(--gold);margin-bottom:.2rem}
+.section-title .hindi{display:block;font-size:.5em;color:var(--gold-soft);margin-top:8px;opacity:.9}
+section{padding:clamp(60px,8vw,92px) 22px;position:relative}
+.wrap{max-width:1000px;margin:0 auto;position:relative;z-index:5}
+
+/* ============ marigold garland (reusable) ============ */
+.garland{position:absolute;top:0;left:0;right:0;height:46px;display:flex;justify-content:space-between;padding:0 6%;z-index:4;pointer-events:none}
+.garland.bottom{top:auto;bottom:0;transform:scaleY(-1)}
+.marigold{width:20px;height:20px;border-radius:50%;
+  background:radial-gradient(circle at 50% 40%,var(--gold-lt),var(--marigold) 55%,var(--marigold-dp));
+  box-shadow:0 0 0 2px rgba(212,123,24,.35);position:relative;top:0}
+.strand{display:flex;flex-direction:column;align-items:center;gap:5px}
+.strand .marigold:nth-child(2){width:15px;height:15px}
+.strand .marigold:nth-child(3){width:11px;height:11px}
+.strand.s2{margin-top:14px}.strand.s3{margin-top:28px}.strand.s4{margin-top:8px}
+.strand.s5{margin-top:20px}
+
+/* hanging bell */
+.bell{width:14px;height:18px;border-radius:50% 50% 45% 45%;background:linear-gradient(180deg,var(--gold-lt),var(--gold-deep));position:relative;margin-top:4px}
+.bell::after{content:"";position:absolute;bottom:-3px;left:50%;transform:translateX(-50%);width:4px;height:4px;border-radius:50%;background:var(--gold-deep)}
+
+/* ============ INTRO ============ */
+#intro{position:fixed;inset:0;z-index:1000;
+  background:radial-gradient(circle at 50% 40%,#5a1428,#280811 74%);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+  cursor:pointer;transition:opacity 1.1s ease,visibility 1.1s ease;padding:34px;}
+#intro.hidden{opacity:0;visibility:hidden}
+.intro-ganesha{position:relative;width:clamp(200px,44vw,250px);aspect-ratio:1;margin-bottom:24px;animation:floatUp 1.5s ease both}
+.ring{position:absolute;inset:0;border-radius:50%;border:2px solid var(--gold);opacity:.3}
+.ring.r2{inset:15px;opacity:.46}.ring.r3{inset:32px;opacity:.66}
+.ring.petals{inset:-15px;border:none;background:conic-gradient(from 0deg,transparent 0 8deg,rgba(203,161,76,.3) 8deg 22deg,transparent 22deg 30deg);-webkit-mask:radial-gradient(circle,transparent 92%,#000 93%);mask:radial-gradient(circle,transparent 92%,#000 93%);animation:spin 46s linear infinite;opacity:.55}
+.intro-ganesha .glyph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Tiro Devanagari Hindi',serif;font-size:clamp(3.8rem,11vw,5.2rem);color:var(--gold-lt);text-shadow:0 0 32px rgba(203,161,76,.55)}
+.intro-shloka{font-family:'Tiro Devanagari Hindi',serif;color:var(--gold-lt);font-size:clamp(1rem,.9rem + .5vw,1.2rem);letter-spacing:.5px;margin-bottom:4px;animation:fadeIn 2s ease both;line-height:1.9}
+.intro-sub{font-style:italic;color:var(--gold-soft);opacity:.9;margin:14px 0 30px;animation:fadeIn 2.6s ease both;font-size:calc(var(--fs-body) * 1.1)}
+.intro-tap{border:1px solid var(--gold);border-radius:999px;padding:13px 30px;color:var(--gold-lt);letter-spacing:2.5px;font-family:'Marcellus',serif;font-size:.8rem;animation:pulse 2.4s ease-in-out infinite;background:rgba(0,0,0,.15)}
+@keyframes floatUp{from{opacity:0;transform:translateY(24px) scale(.92)}to{opacity:1;transform:none}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes pulse{0%,100%{opacity:.6}50%{opacity:1}}
+
+/* ============ HERO ============ */
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:80px 24px 60px;position:relative;overflow:hidden;
+  background:radial-gradient(ellipse at 50% 6%,rgba(27,74,68,.42),transparent 55%),linear-gradient(180deg,var(--wine),var(--wine-deep));}
+.hero>*{position:relative;z-index:5}
+.arches{position:absolute;left:50%;top:0;transform:translateX(-50%);width:min(600px,98vw);height:100%;pointer-events:none;z-index:1}
+.arch{position:absolute;left:50%;transform:translateX(-50%);border-radius:50% 50% 0 0;border:1.5px solid var(--gold);border-bottom:none}
+.arch.a1{width:100%;height:74%;top:4%;opacity:.14}
+.arch.a2{width:80%;height:63%;top:11%;opacity:.22}
+.arch.a3{width:60%;height:52%;top:18%;opacity:.34}
+.hero-ganesha{width:clamp(94px,20vw,118px);aspect-ratio:1;border-radius:50%;border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Tiro Devanagari Hindi',serif;font-size:clamp(2.4rem,6vw,3rem);color:var(--gold-lt);background:radial-gradient(circle,rgba(203,161,76,.14),transparent);margin-bottom:14px;box-shadow:0 0 40px rgba(203,161,76,.26)}
+.ganesh-line{font-family:'Tiro Devanagari Hindi',serif;color:var(--gold-lt);font-size:calc(var(--fs-body) * .95);letter-spacing:.5px;line-height:1.9;margin-bottom:8px}
+.ganesh-sub{display:flex;flex-direction:column;align-items:center;gap:2px;font-style:italic;color:var(--gold-soft);opacity:.92;margin-bottom:26px;font-size:calc(var(--fs-body) * 1.32);line-height:1.4}
+.ganesh-sub .amp-line{font-family:'Great Vibes',cursive;font-style:normal;color:var(--rose);font-size:1.5em;line-height:1}
+.invite-line{font-size:calc(var(--fs-body) * 1.12);color:var(--gold-soft);max-width:560px;margin:0 auto;line-height:1.6}
+.names{margin:22px 0 4px}
+.names .n{font-family:'Great Vibes',cursive;font-size:var(--fs-script);color:var(--gold);line-height:1.05;letter-spacing:1px;text-shadow:0 2px 18px rgba(203,161,76,.25)}
+.names .amp{font-family:'Great Vibes',cursive;font-size:calc(var(--fs-script) * .5);color:var(--rose);margin:2px 0;line-height:1}
+.parents{font-size:calc(var(--fs-body) * 1.08);color:var(--gold-soft);opacity:.95;margin-top:8px;letter-spacing:.3px}
+.parents .lbl{font-style:italic;color:var(--gold-lt);opacity:.9}
+.date-badge{margin-top:34px;border:1px solid var(--gold);border-radius:5px;padding:16px 36px;font-family:'Marcellus',serif;color:var(--gold-lt);letter-spacing:2px;background:rgba(0,0,0,.2);font-size:calc(var(--fs-body) * 1.02)}
+.date-badge .hindi{display:block;font-size:.82em;color:var(--gold-soft);margin-top:6px;letter-spacing:1px}
+.hero-place{margin-top:18px;font-style:italic;font-size:calc(var(--fs-body) * 1.08);color:var(--gold-soft);opacity:.92}
+.scroll-cue{margin-top:28px;font-family:'Marcellus',serif;font-size:.72rem;letter-spacing:4px;color:var(--gold-soft);opacity:.8}
+.scroll-cue::after{content:"";display:block;width:1px;height:26px;background:var(--gold);margin:8px auto 0;opacity:.6}
+.couple-fig{position:absolute;left:50%;bottom:-2px;transform:translateX(-50%);width:min(360px,82vw);opacity:.55;z-index:2;pointer-events:none}
+
+/* ============ COUNTDOWN ============ */
+.countdown{background:linear-gradient(180deg,var(--wine-deep),var(--wine))}
+.count-grid{display:flex;justify-content:center;gap:clamp(12px,2vw,20px);flex-wrap:wrap;margin-top:30px}
+.count-box{border:1px solid var(--line);border-radius:8px;padding:clamp(18px,3vw,24px) clamp(20px,3vw,28px);min-width:clamp(86px,20vw,104px);text-align:center;background:rgba(0,0,0,.22)}
+.count-box .num{font-family:'Marcellus',serif;font-size:clamp(2.1rem,5vw,2.7rem);color:var(--gold)}
+.count-box .lbl{font-family:'Marcellus',serif;font-size:.74rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold-soft);opacity:.85;margin-top:2px}
+
+/* ============ FUNCTION PANELS ============ */
+.func{position:relative;overflow:hidden;padding:clamp(64px,9vw,104px) 22px}
+.func .panel{max-width:640px;margin:0 auto;position:relative;z-index:5;text-align:center;
+  border:1px solid var(--line);border-radius:16px;padding:clamp(34px,6vw,52px) clamp(24px,5vw,44px);
+  background:rgba(0,0,0,.30);backdrop-filter:blur(2px)}
+.func .fx-name{font-family:'Great Vibes',cursive;font-size:calc(var(--fs-script) * .82);color:var(--gold);line-height:1;margin-bottom:6px}
+.func .fx-name .hindi{font-family:'Tiro Devanagari Hindi',serif;display:block;font-size:.4em;color:var(--gold-soft);margin-top:8px}
+.func .fx-kicker{font-style:italic;color:var(--gold-soft);opacity:.9;font-size:calc(var(--fs-body) * 1.05);margin-bottom:16px}
+.func .fx-date{display:inline-flex;align-items:stretch;border:1px solid var(--gold);border-radius:6px;overflow:hidden;margin:6px 0 4px;background:rgba(0,0,0,.25)}
+.func .fx-date .d-day{font-family:'Marcellus',serif;font-size:calc(var(--fs-heading) * 1.5);color:var(--gold-lt);padding:10px 18px;display:flex;align-items:center}
+.func .fx-date .d-side{display:flex;flex-direction:column;justify-content:center;padding:8px 18px;border-left:1px solid var(--line);font-family:'Marcellus',serif;color:var(--gold-soft);font-size:calc(var(--fs-body) * .82);letter-spacing:1px;line-height:1.5}
+.func .fx-time{font-family:'Marcellus',serif;color:var(--gold-lt);font-size:calc(var(--fs-body) * 1.05);letter-spacing:1px;margin-top:12px}
+.func .fx-venue{color:var(--ivory);opacity:.85;margin-top:8px;font-size:calc(var(--fs-body) * 1.02)}
+.func .fig{width:clamp(140px,34vw,190px);margin:20px auto 0;display:block}
+
+/* Mehendi — henna green + florals */
+.func.mehendi{background:linear-gradient(180deg,#243b1c,#1a2b14)}
+.func.mehendi .panel{border-color:rgba(226,205,134,.5)}
+.func.mehendi .fx-name,.func.mehendi .fx-date .d-day{color:#e7cd86}
+/* Engagement — twilight taj tones (violet/rose) */
+.func.engage{background:linear-gradient(180deg,#3a2450,#2a1838)}
+.func.engage .fx-name{color:#e9c6d6}
+/* Haldi — marigold yellow */
+.func.haldi{background:linear-gradient(180deg,#7a5410,#5c3f0b)}
+.func.haldi .panel{background:rgba(40,20,0,.34);border-color:rgba(232,160,44,.55)}
+.func.haldi .fx-name,.func.haldi .fx-date .d-day{color:#ffd77a}
+/* Wedding — deep wine + gold */
+.func.wedding{background:linear-gradient(180deg,var(--wine),var(--wine-deep))}
+.func.wedding .fx-name{color:var(--gold)}
+.sub-cols{display:flex;gap:14px;margin-top:20px;justify-content:center}
+.sub-col{flex:1;max-width:180px;border:1px solid var(--line);border-radius:10px;padding:16px 12px;text-align:center;background:rgba(0,0,0,.28)}
+.sub-col .st{font-family:'Marcellus',serif;color:var(--gold-lt);font-size:calc(var(--fs-body) * 1.05)}
+.sub-col .st .hindi{display:block;font-size:.78em;color:var(--gold-soft);margin-top:2px}
+.sub-col .sti{color:var(--gold-lt);font-size:calc(var(--fs-body) * .95);margin-top:8px}
+
+/* floral corner clusters for panels */
+.floral{position:absolute;width:120px;height:120px;z-index:3;pointer-events:none;opacity:.92}
+.floral.tl{top:8px;left:8px}.floral.tr{top:8px;right:8px;transform:scaleX(-1)}
+.floral.bl{bottom:8px;left:8px;transform:scaleY(-1)}
+.floral.br{bottom:8px;right:8px;transform:scale(-1)}
+
+/* ============ VENUE ============ */
+.venue-sec{background:linear-gradient(180deg,var(--wine),var(--teal-dk));text-align:center;position:relative;overflow:hidden}
+.venue-card{max-width:620px;margin:32px auto 0;border:1px solid var(--gold);border-radius:14px;padding:clamp(32px,5vw,46px) clamp(24px,4vw,36px);background:rgba(0,0,0,.28);position:relative;z-index:5}
+.venue-card .estate{font-style:italic;color:var(--gold-soft);opacity:.85;font-size:calc(var(--fs-body) * 1.02)}
+.venue-card h3{color:var(--gold);font-size:calc(var(--fs-heading) * 1.1);margin:8px 0}
+.venue-card .checkin{font-style:italic;font-size:calc(var(--fs-body) * 1.1);color:var(--gold-lt);margin:16px 0}
+.map-btn{display:inline-block;border:1px solid var(--gold);color:var(--gold-lt);padding:13px 30px;border-radius:4px;text-decoration:none;font-size:.82rem;letter-spacing:2px;transition:background .25s,color .25s;font-family:'Marcellus',serif;margin-top:6px}
+.map-btn:hover{background:var(--gold);color:var(--wine-deep)}
+.forest-strip{position:absolute;left:0;right:0;bottom:0;height:110px;pointer-events:none;opacity:.4;z-index:1;
+  background:radial-gradient(18px 56px at 6% 100%,var(--teal) 60%,transparent 62%),radial-gradient(24px 76px at 16% 100%,var(--teal) 60%,transparent 62%),radial-gradient(16px 48px at 26% 100%,var(--teal) 60%,transparent 62%),radial-gradient(28px 86px at 38% 100%,var(--teal) 60%,transparent 62%),radial-gradient(20px 62px at 50% 100%,var(--teal) 60%,transparent 62%),radial-gradient(26px 80px at 62% 100%,var(--teal) 60%,transparent 62%),radial-gradient(16px 50px at 72% 100%,var(--teal) 60%,transparent 62%),radial-gradient(24px 74px at 84% 100%,var(--teal) 60%,transparent 62%),radial-gradient(18px 58px at 94% 100%,var(--teal) 60%,transparent 62%);background-repeat:no-repeat}
+
+/* ============ QUOTE ============ */
+.quote{background:linear-gradient(180deg,var(--teal-dk),var(--wine-deep));text-align:center}
+.quote p{font-style:italic;font-size:calc(var(--fs-body) * 1.4);max-width:700px;margin:0 auto;color:var(--gold-soft);line-height:1.55}
+.quote .hindi{display:block;font-style:normal;font-size:calc(var(--fs-body) * 1.05);color:var(--gold-lt);margin-top:16px}
+
+/* ============ RSVP ============ */
+.rsvp{background:linear-gradient(180deg,var(--wine-deep),var(--wine))}
+.rsvp-card{max-width:620px;margin:34px auto 0;border:1px solid var(--gold);border-radius:16px;padding:clamp(32px,5vw,44px) clamp(24px,4vw,36px);background:rgba(0,0,0,.26)}
+.field{margin-bottom:22px}
+.field label{display:block;font-family:'Marcellus',serif;font-size:calc(var(--fs-body) * .86);letter-spacing:.5px;color:var(--gold-lt);margin-bottom:8px}
+.field input,.field select,.field textarea{width:100%;padding:14px 16px;border:1px solid var(--line);border-radius:8px;font-family:'Cormorant Garamond',serif;font-size:calc(var(--fs-body) * 1.02);color:var(--ink);background:var(--ivory)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(203,161,76,.2)}
+.field textarea{resize:vertical;min-height:88px}
+.row{display:flex;gap:16px;flex-wrap:wrap}
+.row .field{flex:1;min-width:180px}
+.submit-btn{width:100%;padding:17px;border:none;border-radius:6px;cursor:pointer;background:linear-gradient(90deg,var(--gold-deep),var(--gold-lt));color:var(--wine-deep);font-family:'Marcellus',serif;font-size:calc(var(--fs-body) * 1.02);letter-spacing:2px;transition:opacity .25s}
+.submit-btn:hover{opacity:.92}
+.form-note{text-align:center;font-size:calc(var(--fs-body) * .95);color:var(--gold-soft);margin-top:14px}
+#thankyou{display:none;text-align:center;padding:24px}
+#thankyou h3{color:var(--gold);font-size:var(--fs-heading);margin-bottom:8px}
+#thankyou .hindi{color:var(--gold-lt)}
+
+/* ============ FOOTER ============ */
+.footer{background:var(--wine-deep);color:var(--ivory);text-align:center;padding:68px 22px}
+.footer .fnames{font-family:'Great Vibes',cursive;font-size:calc(var(--fs-script) * .7);color:var(--gold)}
+.footer .heart{color:var(--rose);font-size:1.3rem;margin:10px 0}
+.footer .tag{opacity:.88;max-width:480px;margin:8px auto;color:var(--gold-soft);font-size:calc(var(--fs-body) * 1.05)}
+.footer .tag .hindi{display:block;margin-top:8px;color:var(--gold-lt)}
+.footer .hash{margin-top:22px;letter-spacing:2px;color:var(--rose);font-family:'Marcellus',serif;font-size:calc(var(--fs-body) * 1.08)}
+
+@media(max-width:600px){
+  .sub-cols{flex-direction:column;align-items:center}
+  .sub-col{max-width:100%;width:100%}
+  .garland{padding:0 3%}
+}
+@media(prefers-reduced-motion:reduce){
+  .intro-ganesha,.intro-shloka,.intro-sub,.ring.petals,.intro-tap{animation:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ INTRO ============ -->
+<div id="intro" onclick="enterSite()">
+  <div class="intro-ganesha">
+    <div class="ring petals"></div>
+    <div class="ring"></div><div class="ring r2"></div><div class="ring r3"></div>
+    <div class="glyph hindi">श्री</div>
+  </div>
+  <div class="intro-shloka hindi">॥ वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ ।<br>निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा ॥</div>
+  <div class="intro-sub">With the blessings of Shri Ganesh</div>
+  <div class="intro-tap">TAP TO UNVEIL THE INVITATION</div>
+</div>
+
+<div class="page-frame"></div>
+<div class="inner-frame"></div>
+<span class="corner tl">❦</span><span class="corner tr">❦</span>
+<span class="corner bl">❦</span><span class="corner br">❦</span>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="arches"><div class="arch a1"></div><div class="arch a2"></div><div class="arch a3"></div></div>
+
+  <div class="hero-ganesha hindi">श्री</div>
+  <div class="ganesh-line hindi">॥ वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ ।<br>निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा ॥</div>
+  <div class="ganesh-sub">With the blessings of Shri Ganesh<span class="amp-line">&amp;</span>Our elders</div>
+
+  <p class="invite-line">Amidst the wilds of Jim Corbett, two families joyfully request the honour of your presence at the sacred union of</p>
+
+  <div class="names">
+    <div class="n">Naman</div>
+    <div class="parents"><span class="lbl">Son of</span> Mr. Praveen Dora &amp; Mrs. Reena Dora</div>
+    <div class="amp">weds</div>
+    <div class="n">Shreya</div>
+    <div class="parents"><span class="lbl">Daughter of</span> Mr. Rajesh Arora &amp; Mrs. Meenakshi Arora</div>
+  </div>
+
+  <div class="date-badge">THE FOURTEENTH OF DECEMBER, 2026
+    <span class="hindi">१४ दिसम्बर २०२६ &nbsp;•&nbsp; शुभ विवाह</span>
+  </div>
+  <div class="hero-place">Namaste Corbett Resort &amp; Spa · Jim Corbett</div>
+  <div class="scroll-cue">SCROLL</div>
+
+  <svg class="couple-fig" viewBox="0 0 340 150" xmlns="http://www.w3.org/2000/svg" fill="none">
+    <g stroke="#cba14c" stroke-width="1.4" opacity="0.9">
+      <circle cx="128" cy="34" r="12"/><path d="M116 30 q12 -14 24 0"/><path d="M120 24 l8 -10 l8 10"/>
+      <path d="M128 46 v40 M128 56 l-16 18 M128 56 l16 18 M128 86 l-10 44 M128 86 l10 44"/>
+      <circle cx="196" cy="36" r="11"/><path d="M185 38 q11 20 22 0"/>
+      <path d="M196 47 v34 M196 55 l-14 16 M196 55 l14 16 M196 81 q-22 24 -14 49 h28 q8 -25 -14 -49"/>
+      <path d="M140 60 q22 -18 44 0" stroke-dasharray="2 3"/>
+    </g>
+  </svg>
+</header>
+
+<!-- ============ COUNTDOWN ============ -->
+<section class="countdown">
+  <div class="wrap">
+    <p class="eyebrow">Until two souls become one</p>
+    <h2 class="section-title">The Countdown <span class="hindi">एक नई शुरुआत</span></h2>
+    <div class="divider"><span>✦</span></div>
+    <div class="count-grid">
+      <div class="count-box"><div class="num" id="cd-days">00</div><div class="lbl">Days</div></div>
+      <div class="count-box"><div class="num" id="cd-hrs">00</div><div class="lbl">Hours</div></div>
+      <div class="count-box"><div class="num" id="cd-min">00</div><div class="lbl">Minutes</div></div>
+      <div class="count-box"><div class="num" id="cd-sec">00</div><div class="lbl">Seconds</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MEHENDI ============ -->
+<section class="func mehendi">
+  <!-- floral corners -->
+  <svg class="floral tl" viewBox="0 0 120 120" fill="none"><g stroke="#8fae5d" stroke-width="1.5" opacity=".9"><path d="M6 40 q30 -20 54 6 M10 60 q34 -14 60 10 M8 80 q30 -6 58 18"/><circle cx="30" cy="34" r="7" fill="#e7cd86" stroke="none"/><circle cx="52" cy="46" r="6" fill="#d9b24a" stroke="none"/><circle cx="24" cy="56" r="5" fill="#e7cd86" stroke="none"/><circle cx="46" cy="66" r="6" fill="#c98f3a" stroke="none"/></g></svg>
+  <svg class="floral tr" viewBox="0 0 120 120" fill="none"><g stroke="#8fae5d" stroke-width="1.5" opacity=".9"><path d="M6 40 q30 -20 54 6 M10 60 q34 -14 60 10 M8 80 q30 -6 58 18"/><circle cx="30" cy="34" r="7" fill="#e7cd86" stroke="none"/><circle cx="52" cy="46" r="6" fill="#d9b24a" stroke="none"/><circle cx="24" cy="56" r="5" fill="#e7cd86" stroke="none"/></g></svg>
+  <div class="wrap">
+    <div class="panel">
+      <div class="fx-name script">Mehendi<span class="hindi">मेहंदी</span></div>
+      <div class="fx-kicker">An evening of henna &amp; song</div>
+      <div class="fx-date">
+        <div class="d-day">13</div>
+        <div class="d-side"><span>DEC</span><span>2026</span></div>
+        <div class="d-side"><span>SATURDAY</span></div>
+      </div>
+      <div class="fx-time">12:00 PM onwards</div>
+      <div class="fx-venue">The Verdant Lawns</div>
+      <!-- bride-with-mehendi figurine -->
+      <svg class="fig" viewBox="0 0 160 180" fill="none"><g stroke="#e7cd86" stroke-width="1.5"><circle cx="80" cy="40" r="20"/><path d="M80 8 q-6 6 0 12 q6 -6 0 -12" fill="#e7cd86"/><path d="M60 44 q20 26 40 0"/><path d="M80 60 v40 M80 72 q-30 6 -40 40 M80 72 q30 6 40 40 M60 100 q-16 40 -8 72 h56 q8 -32 -8 -72" /><circle cx="40" cy="118" r="6"/><circle cx="120" cy="118" r="6"/></g></svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENGAGEMENT & COCKTAIL ============ -->
+<section class="func engage">
+  <svg class="floral tl" viewBox="0 0 120 120" fill="none"><g stroke="#c9a2c8" stroke-width="1.5" opacity=".85"><path d="M6 40 q30 -20 54 6 M10 62 q34 -14 60 10"/><circle cx="30" cy="34" r="7" fill="#e9c6d6" stroke="none"/><circle cx="52" cy="46" r="6" fill="#cba14c" stroke="none"/><circle cx="26" cy="58" r="5" fill="#e9c6d6" stroke="none"/></g></svg>
+  <svg class="floral tr" viewBox="0 0 120 120" fill="none"><g stroke="#c9a2c8" stroke-width="1.5" opacity=".85"><path d="M6 40 q30 -20 54 6 M10 62 q34 -14 60 10"/><circle cx="30" cy="34" r="7" fill="#e9c6d6" stroke="none"/><circle cx="52" cy="46" r="6" fill="#cba14c" stroke="none"/></g></svg>
+  <div class="wrap">
+    <div class="panel">
+      <div class="fx-name script">Engagement &amp; Cocktails<span class="hindi">सगाई एवं कॉकटेल</span></div>
+      <div class="fx-kicker">A promise sealed, a toast raised</div>
+      <div class="fx-date">
+        <div class="d-day">13</div>
+        <div class="d-side"><span>DEC</span><span>2026</span></div>
+        <div class="d-side"><span>SATURDAY</span></div>
+      </div>
+      <div class="fx-time">7:00 PM onwards</div>
+      <div class="fx-venue">Under the Corbett Stars</div>
+      <!-- couple + taj dome silhouette -->
+      <svg class="fig" viewBox="0 0 200 170" fill="none"><g stroke="#e9c6d6" stroke-width="1.5" opacity=".9"><path d="M100 30 q-14 -22 -14 -8 M100 30 q14 -22 14 -8" /><path d="M70 96 q30 -50 60 0" opacity=".5"/><ellipse cx="100" cy="70" rx="20" ry="26"/><path d="M100 44 v-10"/><circle cx="82" cy="120" r="12"/><path d="M82 132 v26 M82 140 l-12 14 M82 140 l12 14"/><circle cx="118" cy="122" r="11"/><path d="M118 133 v24 M118 140 l-11 13 M118 140 l11 13 M118 157 q-16 8 -10 12 M118 157 q16 8 10 12"/></g></svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HALDI ============ -->
+<section class="func haldi">
+  <div class="garland">
+    <div class="strand"><div class="marigold"></div><div class="marigold"></div><div class="marigold"></div><div class="bell"></div></div>
+    <div class="strand s2"><div class="marigold"></div><div class="marigold"></div><div class="bell"></div></div>
+    <div class="strand s3"><div class="marigold"></div><div class="marigold"></div><div class="marigold"></div></div>
+    <div class="strand s4"><div class="marigold"></div><div class="marigold"></div><div class="bell"></div></div>
+    <div class="strand s5"><div class="marigold"></div><div class="marigold"></div><div class="marigold"></div><div class="bell"></div></div>
+    <div class="strand s2"><div class="marigold"></div><div class="marigold"></div></div>
+    <div class="strand s3"><div class="marigold"></div><div class="marigold"></div><div class="bell"></div></div>
+  </div>
+  <div class="wrap">
+    <div class="panel">
+      <div class="fx-name script">Haldi<span class="hindi">हल्दी</span></div>
+      <div class="fx-kicker">Blessings of turmeric &amp; gold</div>
+      <div class="fx-date">
+        <div class="d-day">14</div>
+        <div class="d-side"><span>DEC</span><span>2026</span></div>
+        <div class="d-side"><span>SUNDAY</span></div>
+      </div>
+      <div class="fx-time">9:00 AM onwards</div>
+      <div class="fx-venue">The Poolside Terrace</div>
+      <!-- joyful bride figurine (I.PNG inspired) -->
+      <svg class="fig" viewBox="0 0 160 180" fill="none"><g stroke="#ffd77a" stroke-width="1.6"><circle cx="80" cy="42" r="20"/><path d="M80 22 q-8 -4 -14 6 M80 22 q8 -4 14 6"/><path d="M62 46 q18 22 36 0"/><path d="M80 62 v36 M80 74 q-32 0 -44 30 M80 74 q32 0 44 30" /><path d="M60 98 q-14 44 -6 74 h52 q8 -30 -6 -74"/><path d="M36 104 q-10 -6 -16 -2 M124 104 q10 -6 16 -2"/><circle cx="20" cy="104" r="5" fill="#ffd77a" stroke="none"/><circle cx="140" cy="104" r="5" fill="#ffd77a" stroke="none"/></g></svg>
+    </div>
+  </div>
+  <div class="garland bottom">
+    <div class="strand s3"><div class="marigold"></div><div class="marigold"></div><div class="marigold"></div></div>
+    <div class="strand"><div class="marigold"></div><div class="marigold"></div></div>
+    <div class="strand s4"><div class="marigold"></div><div class="marigold"></div><div class="marigold"></div></div>
+    <div class="strand s2"><div class="marigold"></div><div class="marigold"></div></div>
+    <div class="strand s5"><div class="marigold"></div><div class="marigold"></div><div class="marigold"></div></div>
+    <div class="strand s3"><div class="marigold"></div><div class="marigold"></div></div>
+  </div>
+</section>
+
+<!-- ============ WEDDING ============ -->
+<section class="func wedding">
+  <svg class="floral tl" viewBox="0 0 120 120" fill="none"><g stroke="#cba14c" stroke-width="1.5" opacity=".8"><path d="M6 40 q30 -20 54 6 M10 62 q34 -14 60 10"/><circle cx="30" cy="34" r="7" fill="#e7cd86" stroke="none"/><circle cx="52" cy="46" r="6" fill="#cba14c" stroke="none"/></g></svg>
+  <svg class="floral tr" viewBox="0 0 120 120" fill="none"><g stroke="#cba14c" stroke-width="1.5" opacity=".8"><path d="M6 40 q30 -20 54 6 M10 62 q34 -14 60 10"/><circle cx="30" cy="34" r="7" fill="#e7cd86" stroke="none"/><circle cx="52" cy="46" r="6" fill="#cba14c" stroke="none"/></g></svg>
+  <div class="wrap">
+    <div class="panel">
+      <div class="fx-name script">The Wedding<span class="hindi">विवाह</span></div>
+      <div class="fx-kicker">The sacred vows, taken seven times</div>
+      <div class="fx-date">
+        <div class="d-day">14</div>
+        <div class="d-side"><span>DEC</span><span>2026</span></div>
+        <div class="d-side"><span>SUNDAY</span></div>
+      </div>
+      <div class="fx-time">4:00 PM onwards</div>
+      <div class="fx-venue">The Grand Arena</div>
+      <!-- varmala figurine: two figures exchanging garland -->
+      <svg class="fig" viewBox="0 0 200 170" fill="none"><g stroke="#cba14c" stroke-width="1.6"><circle cx="72" cy="40" r="16"/><path d="M60 34 q12 -14 24 0"/><path d="M62 30 l10 -10 l10 10"/><path d="M72 56 v46 M72 68 l-18 20 M72 68 l18 20 M60 102 l-8 50 M84 102 l8 50"/><circle cx="132" cy="44" r="15"/><path d="M117 46 q15 20 30 0"/><path d="M132 59 v40 M132 70 l-16 18 M132 70 l16 18 M120 99 q-16 30 -8 53 h34 q8 -23 -8 -53"/><path d="M86 74 q24 -20 44 0" stroke-dasharray="2 3"/><circle cx="108" cy="66" r="3" fill="#e7cd86" stroke="none"/></g></svg>
+
+      <div class="sub-cols">
+        <div class="sub-col"><div class="st">Varmala <span class="hindi">वरमाला</span></div><div class="sti">4:00 PM</div></div>
+        <div class="sub-col"><div class="st">The Pheras <span class="hindi">फेरे</span></div><div class="sti">5:00 PM</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VENUE ============ -->
+<section class="venue-sec">
+  <div class="forest-strip"></div>
+  <div class="wrap">
+    <p class="eyebrow">Where the jungle meets celebration</p>
+    <h2 class="section-title">Venue</h2>
+    <div class="divider"><span>✦</span></div>
+    <div class="venue-card">
+      <div class="estate">All celebrations held at</div>
+      <h3>Namaste Corbett Resort &amp; Spa</h3>
+      <div class="estate">Jim Corbett, Uttarakhand</div>
+      <p class="checkin">Gracious check-in from 11:00 AM onwards</p>
+      <a class="map-btn" target="_blank" href="https://maps.app.goo.gl/ZaCEiakeqvUCStmL8">Open in Google Maps</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUOTE ============ -->
+<section class="quote">
+  <div class="wrap">
+    <div class="divider"><span>❦</span></div>
+    <p>"Beneath the ancient sal trees and a canopy of stars, two hearts begin their forever."
+      <span class="hindi">दो आत्माएँ, एक सफर — प्रेम से बंधे, ईश्वर से आशीर्वादित।</span></p>
+    <div class="divider"><span>❦</span></div>
+  </div>
+</section>
+
+<!-- ============ RSVP ============ -->
+<section class="rsvp" id="rsvp">
+  <div class="wrap">
+    <p class="eyebrow">Kindly grace us with your reply</p>
+    <h2 class="section-title">RSVP</h2>
+    <div class="divider"><span>✦</span></div>
+    <div class="rsvp-card">
+      <form id="rsvpForm" action="https://formspree.io/f/xeaqybyy" method="POST">
+        <div class="field"><label for="name">Your Name / आपका नाम</label>
+          <input type="text" id="name" name="Name" placeholder="Full name" required /></div>
+        <div class="field"><label for="phone">Phone Number / फ़ोन नंबर</label>
+          <input type="tel" id="phone" name="Phone" placeholder="e.g. +91 98765 43210" required /></div>
+        <div class="row">
+          <div class="field"><label for="attending">Will you attend?</label>
+            <select id="attending" name="Attending" required>
+              <option value="">Please select</option>
+              <option value="Yes, with joy!">Yes, joyfully!</option>
+              <option value="Sorry, cannot make it">Sorry, cannot make it</option>
+            </select></div>
+          <div class="field"><label for="count">Total People (incl. you)</label>
+            <input type="number" id="count" name="Total Guests" min="1" value="1" required /></div>
+        </div>
+        <div class="field"><label for="message">A Blessing for the Couple (optional)</label>
+          <textarea id="message" name="Message" placeholder="Share your wishes..."></textarea></div>
+        <button type="submit" class="submit-btn">Send RSVP</button>
+        <p class="form-note">We can't wait to celebrate with you ♥</p>
+      </form>
+      <div id="thankyou">
+        <h3>Thank You! 🎉</h3>
+        <p>Your RSVP has been received.</p>
+        <p class="hindi">आपकी उपस्थिति की पुष्टि प्राप्त हुई — धन्यवाद!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="fnames script">Naman &amp; Shreya</div>
+  <div class="heart">♥</div>
+  <p class="tag">Two families, one love story, blessed beneath the Corbett skies. Thank you for being part of ours.
+    <span class="hindi">दो परिवार, एक प्रेम कथा — आपका आशीर्वाद हमारा सौभाग्य।</span></p>
+  <div class="hash">#TheWildeHeartsOfCorbett</div>
+</footer>
+
+<script>
+function enterSite(){
+  document.getElementById('intro').classList.add('hidden');
+  document.body.style.overflow='';
+  setTimeout(()=>{document.getElementById('intro').style.display='none';},1100);
+}
+document.body.style.overflow='hidden';
+
+const weddingDate=new Date(2026,11,14,16,0,0);
+const p=n=>String(n).padStart(2,'0');
+function tick(){
+  let diff=Math.max(0,weddingDate-new Date());
+  const d=Math.floor(diff/86400000);diff-=d*86400000;
+  const h=Math.floor(diff/3600000);diff-=h*3600000;
+  const m=Math.floor(diff/60000);diff-=m*60000;
+  const s=Math.floor(diff/1000);
+  document.getElementById('cd-days').textContent=p(d);
+  document.getElementById('cd-hrs').textContent=p(h);
+  document.getElementById('cd-min').textContent=p(m);
+  document.getElementById('cd-sec').textContent=p(s);
+}
+tick();setInterval(tick,1000);
+
+const form=document.getElementById('rsvpForm');
+form.addEventListener('submit',async(e)=>{
+  e.preventDefault();
+  try{
+    const res=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
+    if(res.ok){form.style.display='none';document.getElementById('thankyou').style.display='block';}
+    else{alert('Something went wrong. Please try again.');}
+  }catch(err){alert('Network error. Please try again.');}
+});
+</script>
+</body>
+</html>
